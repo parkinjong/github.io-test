@@ -19,7 +19,9 @@ AWS DNA를 통해서 기존에 사용하지 않던 유용한 기술들을 공부
 
 #### AWS JAM
  
-- 주어진 특정 시나리오에 대해서 팀원들과 함께 아키텍처를 정확하고 빠르게 구성해 포인트를 얻어가며 다른 팀과 경쟁하는 게임 대회입니다.([소개영상](https://www.youtube.com/watch?v=dSqKmmZsMK4))  
+- 주어진 특정 시나리오에 대해서 팀원들과 함께 아키텍처를 정확하고 빠르게 구성해 포인트를 얻어가며 다른 팀과 경쟁하는 게임 대회입니다.
+{{< youtube dSqKmmZsMK4 >}}
+<!--([소개영상](https://www.youtube.com/watch?v=dSqKmmZsMK4))-->   
   
 #### 프로그램 혜택
  
@@ -65,17 +67,17 @@ AWS DNA의 하이라이트 JAM 게임 대회.
 
 내가 대회 종료까지 푼 문제는 총 4개이며 대략 내용을 설명하면 아래와 같다.  
  
-S3 Access Control
-: S3 Access Control을 적절하게 조정하고 static website 페이지를 접근하면 코드를 확인 할 수 있었고 정답으로 제출하면 됐다.
+S3 Access Control  
+- S3 Access Control을 적절하게 조정하고 static website 페이지를 접근하면 코드를 확인 할 수 있었고 정답으로 제출하면 됐다.
  
-Put your database to work
-: 기존 인스턴스에 접근하지 않고 php 소스를 수정해 신규 RDS로 연결하면 성공. AWS System Manager를 통해 php dbinfo를 수정했다.
+Put your database to work  
+- 기존 인스턴스에 접근하지 않고 php 소스를 수정해 신규 RDS로 연결하면 성공. AWS System Manager를 통해 php dbinfo를 수정했다.
  
-A Lambda PI
-: API Gateway에서 Lambda proxy를 통해 response를 받으려 하는데 제대로 넘어오지 않는 문제. API Gateway가 Lambda의 response를 처리하려면 JSON 형식이여야 해서 Lambda 함수를 수정해서 기다리면 알아서 시스템에서 체크하여 문제가 풀림.
+A Lambda PI  
+- API Gateway에서 Lambda proxy를 통해 response를 받으려 하는데 제대로 넘어오지 않는 문제. API Gateway가 Lambda의 response를 처리하려면 JSON 형식이여야 해서 Lambda 함수를 수정해서 기다리면 알아서 시스템에서 체크하여 문제가 풀림.
  
-Learning Gateway To Transit Gateway
-: Transit Gateway로 구성된 3개의 VPC에서 public한 EC2에서 private한 EC2에 접근할 수 있도록 구성하면 문제를 풀어감.
+Learning Gateway To Transit Gateway  
+- Transit Gateway로 구성된 3개의 VPC에서 public한 EC2에서 private한 EC2에 접근할 수 있도록 구성하면 문제를 풀어감.
   
 #### JAM 게임 대회 대시보드
  

@@ -7,8 +7,10 @@ tags: [aws,certification,saa]     # TAG names should always be lowercase
   
 ### 자격증 시험을 본 이유
  평소에 AWS를 다루면서 내가 어느정도의 지식들을 갖고 있는지 잘 모르기도 해서 수준을 확인하고 좀 더 전문적인 지식들을 얻기위해 자격증 시험을 치루고 취득하면 어떨까 생각을 했었다. 운이 좋게 [AWS DNA 3기](https://parkinjong.github.io/posts/aws-dna-3%EA%B8%B0-%ED%9B%84%EA%B8%B0/)가 끝나갈 때 쯤 DNA 멤버들에게 Solutions Architect - Associate(SAA) 자격증 50% 바우처 쿠폰을 제공한다고 하여 이 기회에 취득하는게 좋겠다 하여 시험을 예약했다. (Gift가 뭔지도 궁금했다...)  
+   
+
 ![Slack](saa-01.png)
-_AWS DNA 3기 Slack_
+_AWS DNA 3기 Slack 내용_
   
 ### AWS 자격증이란?
  AWS Certification은 특별한 지식, 기술 및 역량을 보유했음을 증명한 개인에게 AWS가 발급하는 자격증입니다. AWS 전문가와 협력하여 일반적인 클라우드 작업 역할에 필요한 경험과 특정 기술 분야에서 전문성의 기준을 세우고 있습니다. AWS Certification 시험 중 하나에 응시하여 통과하면 이 기준을 충족했음을 증명할 수 있습니다. 그러면 AWS에서 AWS Certification을 부여합니다.  - [출처](https://aws.amazon.com/ko/certification/certification-prep/?ch=cta&cta=header&p=2)

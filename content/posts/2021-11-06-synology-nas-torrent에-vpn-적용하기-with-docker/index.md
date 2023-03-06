@@ -3,6 +3,7 @@ title: Synology NAS Torrent에 VPN 적용하기 with Docker
 date: 2021-11-06 20:22:00 +0900
 categories: [NAS]
 tags: [nas,synology,vpn,torrent,expressvpn]     # TAG names should always be lowercase
+ShowToc: true
 ---
 
 시놀로지 나스를 쓰면서 토렌트를 위해 Download Station을 이용하여 잘 쓰고 있었다.  
@@ -36,17 +37,17 @@ CPython version: 3.7.10
 OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ```
 에러 메세지 없이 버전이 나오면 성공이다.  
-**docker와 docker-compose의 차이**  
-docker
-: 하나의 컨테이너 실행  
 
-docker-compose
-: 여러 컨테이너를 yaml file로 세팅하여 한번에 실행
+### docker와 docker-compose의 차이  
+docker - 하나의 컨테이너 실행  
+docker-compose - 여러 컨테이너를 yaml file로 세팅하여 한번에 실행
   
   
 ## docker-compose.yaml 작성
 이제 docker-compose.yaml 파일을 작성해야한다.  
 아래는 가이드 문서에 나온 docker-compose.yml의 예시.  
+
+#### docker-compose.yaml - example
 ```yaml
 version: '3.3'
 services:
@@ -69,10 +70,10 @@ services:
             - '9091:9091'
         image: haugene/transmission-openvpn
 ```
-{: file='docker-compose.yaml - example'}
   
 
-가이드 문서에 나온대로 사용할 docker-compose.yml을 만들어봤다.  
+가이드 문서에 나온대로 사용할 docker-compose.yml을 만들어봤다. 
+#### docker-compose.yaml 
 ```yaml
 version: '3.3'
 services:
@@ -114,7 +115,6 @@ services:
         ports:
             - 7002:7002
 ```
-{: file='docker-compose.yaml'}
   
 
 최대한 하나씩 설정들을 살펴보며 설명을 해보겠다.
@@ -129,6 +129,7 @@ Synology /volume1/500/transmission/의 경로와 docker의 /data/ 경로를 바�
   
   
 ### environment 
+#### docker-compose.yaml - environment
 ```yaml
         environment:
             - OPENVPN_PROVIDER=EXPRESSVPN
@@ -149,7 +150,6 @@ Synology /volume1/500/transmission/의 경로와 docker의 /data/ 경로를 바�
             - TRANSMISSION_WATCH_DIR_ENABLED=true
             - TRANSMISSION_WATCH_DIR=/data/torrentfile
 ```
-{: file='docker-compose.yaml - environment'}
 - OPENVPN_PROVIDER : 가이드 문서에 따르면 여러 프로바이더를 지원한다. 사용하는 VPN Value를 작성하면 된다. ExpressVPN을 사용하기 때문에 해당 값을 넣었다. [참고](https://haugene.github.io/docker-transmission-openvpn/supported-providers/)  
 - OPENVPN_USERNAME : ExpressVPN 사용자명
 - OPENVPN_PASSWORD : ExpressVPN 비밀번호
@@ -255,8 +255,8 @@ _flood-for-transmission 다운로드 항목에 추가된 모습_
 `flood-for-transmission` 기준 오른쪽 상단 위에 `+` 버튼을 누르고, 마그넷 링크를 붙여넣기 후 `Add Torrent` 버튼을 누르면 된다.  
   
 ![ipleak_06](ipleak_06.png)
-_ipleak에 IP가 표시되는 화면_
+_ipleak에 IP가 표시되는 화면_  
 ![ipleak_07](ipleak_07.png)
-_naver에 내 아이피 주소 확인 화면_
+_naver에 내 아이피 주소 확인 화면_  
 다운로드 항목에 추가가 되면 ipleak 페이지에 해당 마그넷으로 다운로드 중인 피어의 IP가 표시가 된다. 해당 IP 주소가 같은 공유기에 물려있는 PC로 네이버에 `내 아이피 주소 확인`을 검색한 후 표시되는 IP와 다르게 표시가 된다면 성공이다.  
   

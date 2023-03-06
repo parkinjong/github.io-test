@@ -15,15 +15,39 @@ minify:
   disableXML: true
   minifyOutput: true
 
+languages:
+    en:
+        languageName: "Korean"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                # - name: Profile
+                #   url: profile
+                #   weight: 5
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+
 params:
   # defaultTheme: light
   # defaultTheme: dark
   defaultTheme: auto # to switch between dark or light according to browser theme
   disableThemeToggle: false
   homeInfoParams:
-    Title: Hi there wave
-    Content: Can be Info, links, about...
-
+    Title: InJong Park
+    Content: |
+      안녕하세요 박인종입니다.
+      블로그를 찾아주셔서 감사합니다.
   socialIcons: # optional
     - name: "linkedin"
       url: "https://www.linkedin.com/in/injong-park-535bb5235/"
