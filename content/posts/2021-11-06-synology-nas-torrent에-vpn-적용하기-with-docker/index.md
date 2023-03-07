@@ -4,6 +4,7 @@ date: 2021-11-06 20:22:00 +0900
 categories: [NAS]
 tags: [nas,synology,vpn,torrent,expressvpn]     # TAG names should always be lowercase
 ShowToc: true
+comments: true
 ---
 
 시놀로지 나스를 쓰면서 토렌트를 위해 Download Station을 이용하여 잘 쓰고 있었다.  
