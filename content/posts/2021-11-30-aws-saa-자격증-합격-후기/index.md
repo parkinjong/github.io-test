@@ -3,6 +3,8 @@ title: AWS SAA-C02 자격증 합격 후기
 date: 2021-11-30 21:35:00 +0900
 categories: [aws]
 tags: [aws,certification,saa]     # TAG names should always be lowercase
+ShowToc: true
+comments: true
 ---
   
 ### 자격증 시험을 본 이유

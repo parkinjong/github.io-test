@@ -1,4 +1,4 @@
-baseURL: "https://parkinjong.github.io/github.io-test/"
+baseURL: "http://localhost/"
 title: InJongPark
 languageCode: kr-ko
 paginate: 5
@@ -39,10 +39,10 @@ languages:
                   weight: 10
 
 params:
-  # defaultTheme: light
+  defaultTheme: light
   # defaultTheme: dark
-  defaultTheme: auto # to switch between dark or light according to browser theme
-  disableThemeToggle: false
+  # defaultTheme: auto # to switch between dark or light according to browser theme
+  disableThemeToggle: true
   homeInfoParams:
     Title: InJong Park
     Content: |

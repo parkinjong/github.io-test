@@ -4,6 +4,8 @@ date: 2021-11-07 20:22:00 +0900
 categories: [aws]
 tags: [aws,dna]     # TAG names should always be lowercase
 draft: false
+ShowToc: true
+comments: true
 ---
 
 ### AWS DNA (Digital Native Architect)
